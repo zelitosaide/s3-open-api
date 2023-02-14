@@ -6,7 +6,9 @@
   "repository": "https://github.com/zelitosaide/s3-open-api.git",
   "author": "zas",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
   }
 }
