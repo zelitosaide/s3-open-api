@@ -11,10 +11,10 @@ async function main() {
       : "I don't have a name";
     console.log(greeting);
   };
-
   const Kitten = mongoose.model("Kitten", kittySchema);
 
   const silence = new Kitten({ name: "Silence" });
+  silence.speak();
 }
 
 main()
