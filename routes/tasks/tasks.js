@@ -15,7 +15,10 @@ router.post("/", async function (request, response) {
   response.json(task);
 });
 
-router.patch("/:taskId", async function () {});
+router.patch("/:taskId", async function (request, response) {
+  const taskId = request.params.taskId;
+});
+
 router.delete("/:taskId", async function () {});
 
 export { router };
