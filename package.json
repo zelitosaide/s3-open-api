@@ -1,0 +1,9 @@
+{
+  "name": "s3-open-api",
+  "version": "1.0.0",
+  "description": "API for study and research purposes.",
+  "main": "index.js",
+  "repository": "https://github.com/zelitosaide/s3-open-api.git",
+  "author": "zas",
+  "license": "MIT"
+}
