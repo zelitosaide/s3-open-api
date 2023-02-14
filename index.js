@@ -12,9 +12,8 @@ async function main() {
     console.log(greeting);
   };
   const Kitten = mongoose.model("Kitten", kittySchema);
-
   const silence = new Kitten({ name: "Silence" });
-  silence.speak();
+  await silence.save();
 }
 
 main()
