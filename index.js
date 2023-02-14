@@ -12,7 +12,7 @@ app.use("/v1/tasks", tasks);
 
 async function main() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/test");
+    await mongoose.connect("mongodb://127.0.0.1:27017/s3opendb");
     app.listen(5000);
   } catch (error) {
     console.log(error);
