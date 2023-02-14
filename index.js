@@ -8,6 +8,7 @@ import { router as tasks } from "./routes/tasks/tasks.js";
 mongoose.set("strictQuery", true);
 
 const app = express();
+
 app.use(cors());
 app.use(bodyParser.json({ limit: "64mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "64mb", extended: true }));

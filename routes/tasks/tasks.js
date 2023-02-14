@@ -11,7 +11,7 @@ router.get("/", async function (request, response) {
 
 router.post("/", async function (request, response) {
   const task = new Task(request.body);
-  console.log(task);
+  console.log(request.body);
   // await task.save();
   // response.json(task);
 });
