@@ -17,6 +17,11 @@ router.post("/", async function (request, response) {
 
 router.patch("/:taskId", async function (request, response) {
   const taskId = request.params.taskId;
+  const task = await Task.findOne({ _id: taskId });
+  task.text = request.body.text;
+  task.done = request.body.done;
+  await task.save();
+  response.json(task);
 });
 
 router.delete("/:taskId", async function () {});
