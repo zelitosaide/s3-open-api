@@ -24,6 +24,9 @@ router.patch("/:taskId", async function (request, response) {
   response.json(task);
 });
 
-router.delete("/:taskId", async function () {});
+router.delete("/:taskId", async function () {
+  const taskId = request.params.taskId;
+  await deleteOne({ _id: taskId });
+});
 
 export { router };
