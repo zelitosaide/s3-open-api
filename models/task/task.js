@@ -3,10 +3,10 @@ import { Schema, model } from "mongoose";
 const taskSchema = new Schema(
   {
     text: { type: String },
-    done: { type: Boolean },
-    isRepeated: { type: Boolean },
     date: { type: Date },
     hour: { type: String },
+    done: { type: Boolean },
+    isRepeated: { type: Boolean },
   },
   {
     timestamps: true,
