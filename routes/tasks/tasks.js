@@ -20,6 +20,9 @@ router.patch("/:taskId", async function (request, response) {
   const task = await Task.findOne({ _id: taskId });
   task.text = request.body.text;
   task.done = request.body.done;
+  task.date = request.body.date;
+  task.hour = request.body.hour;
+  task.isRepeated = request.body.isRepeated;
   await task.save();
   response.json(task);
 });
